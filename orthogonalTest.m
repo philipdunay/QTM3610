@@ -1,4 +1,4 @@
-function [ orthonormalTest ] = orthonormalTest( Q )
+function [ orthogonalTest ] = orthogonalTest( Q )
 %Test two matrices for orthonormality
     %Orthonormality is when the matrix times its transpose is equal to the
     %identity matrix.
@@ -7,8 +7,8 @@ function [ orthonormalTest ] = orthonormalTest( Q )
 a = Q*Q';
 i = eye(n);
 if a == i
-    orthonormalTest = 'ORTHONORMAL';
+    orthogonalTest = 'ORTHOGONAL';
 else
-    orthonormalTest = 'NOT ORTHONORMAL';
+    orthogonalTest = 'NOT ORTHOGONAL';
 end
 
